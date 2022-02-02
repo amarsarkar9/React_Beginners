@@ -1,0 +1,14 @@
+.sam{
+    color: red;
+}
+.name{
+    color: burlywood;
+}
+.image{
+    height: auto;
+    width: 140px;
+}
+.width-500{
+    width: 500px;
+    margin: auto;
+}
