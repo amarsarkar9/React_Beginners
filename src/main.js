@@ -1,14 +1,19 @@
 import React from "react";
 import FunctionalComp from "./FunctionalComp";
-// import ClassComp from "./ClassComp";
+import{Row,Col} from "react-bootstrap";
+import ClassComp from "./ClassComp";
 
 const main = (props) => {
   return (
   <>
-  <div>{props.companyname}</div>
-  
-  <FunctionalComp />
-  {/* <ClassComp/> */}
+  <Row>
+    <Col xs={6}>
+      <FunctionalComp />
+      </Col>
+    <Col xs={6}>
+      <ClassComp/>
+    </Col>
+  </Row>
   </>
   );
 };

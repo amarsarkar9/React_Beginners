@@ -29,8 +29,7 @@ class ClassComp extends React.Component {
   render() {
     return (
       <>
-        <div className="header">ClassComp</div>
-        <div>Count = {this.state.count}</div>
+        <div className="header">ClassComp Count = {this.state.count}</div>
         <Button variant="primary" onClick={this.IncreaseCount}>
           Increase
         </Button>

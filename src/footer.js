@@ -1,12 +1,14 @@
 import React from "react";
-import Prac from "./practice";
+import Practice from "./practice";
 
 const footer = () => {
   return (
+    <>
     <div>
-      <Prac/>
-      footer
+      <Practice/>
+      
     </div>
+    </>
   );
 };
 export default footer;

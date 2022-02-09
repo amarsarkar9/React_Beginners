@@ -6,8 +6,10 @@ import Header from "./header";
 import Footer from "./footer";
 import Main from "./main";
 import { Container } from "react-bootstrap";
+import Menuitem from "./Menuitem";
+// import Classs from "./classs";
 
-function App() {
+function App(props) {
   const menu1 = "Home";
   const menu2 = "About";
   const menu3 = "Contact";
@@ -17,6 +19,7 @@ function App() {
       <Container className="bg-info">
         {/* <div className='container bg-info'> */}
         <Header menuitem1={menu1} menuitem2={menu2} menuitem3={menu3}/>
+        {/* <Header menuitem1={props.menu1} menuitem2={props.menu2} menuitem3={props.menu3}/> */}
         <Main companyname={companyname}/>
         <Footer />
       </Container>
@@ -25,31 +28,18 @@ function App() {
   );
 }
 
+// function App() {
+//   return (
+//     <>
+//       <Classs />
+//     </>
+//   );
+// }
+
 // const App=() =>{
 //   let name="Amar";
 //   return <Welcome name={name} />;
 // };
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <FunctionalComp/>
-//       <header className="App-header">
-//         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
